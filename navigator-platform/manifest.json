@@ -1,0 +1,24 @@
+{
+  "name": "navigator.platform",
+  "version": "0.1.0",
+  "description": "Allows the user to configure: `navigator.platform`",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "all_frames": true,
+    "run_at": "document_start",
+    "js": ["content.js"]
+  }],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "icons": {
+    "16": "img/icon16.png",
+    "48": "img/icon48.png",
+    "55": "img/icon55.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "manifest_version": 2
+}
